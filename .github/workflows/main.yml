@@ -42,7 +42,8 @@ jobs:
 
     steps:
       - name: Download artifact
-         with:
+        uses: actions/download-artifact@v2
+        with:
           name: production-files
           path: ./build
 
